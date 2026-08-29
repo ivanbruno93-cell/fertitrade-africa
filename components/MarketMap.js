@@ -4,7 +4,6 @@ const REGIONS = [
   { label: 'Malawi', angle: 15 },
   { label: 'DRC', angle: 50 },
   { label: 'Southern Africa', angle: -90 },
-  { label: 'East Africa', angle: 90 },
 ]
 
 export default function MarketMap({ tone = 'light' }) {

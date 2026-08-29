@@ -1,8 +1,8 @@
 import Link from 'next/link'
 
 export default function CTASection({
-  title = "Let's Connect Your Market to Opportunity.",
-  description = 'Whether you are a supplier, buyer, distributor or strategic partner, let\u2019s explore how we can work together.',
+  title = "Let's Connect Markets and Create Opportunities.",
+  description = "Tell us about the market you're looking to reach or supply. Let's discuss how FertiTrade Africa can help.",
 }) {
   return (
     <section className="bg-navy py-20 md:py-28">

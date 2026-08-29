@@ -16,11 +16,6 @@ const REGIONS = [
       'Beira sits along one of the region\u2019s key trade corridors, positioning our platform to serve markets including Mozambique, Zimbabwe, Zambia and Malawi.',
   },
   {
-    title: 'East Africa',
-    description:
-      'Regional connectivity extends our reach toward East African markets as trade relationships develop.',
-  },
-  {
     title: 'Regional Markets',
     description:
       'We work to connect suppliers and buyers across neighbouring markets that rely on Beira as a gateway.',
@@ -79,7 +74,7 @@ export default function MarketsPage() {
             title="Markets and Corridors We Are Positioned to Serve"
             description="These regions represent relevant markets and trade corridors for our platform, not a confirmation of existing operations in each market."
           />
-          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {REGIONS.map((region) => (
               <div key={region.title} className="rounded-sm border border-navy/10 bg-white p-7 shadow-card">
                 <h3 className="text-lg font-bold text-navy">{region.title}</h3>

@@ -63,8 +63,8 @@ export default function Footer() {
               </a>
             </li>
             <li>
-              <a href="mailto:info@fertitradeafrica.co.mz" className="flex items-center gap-2 hover:text-white">
-                <Mail size={16} /> info@fertitradeafrica.co.mz
+              <a href="mailto:info@fertitrade.co.mz" className="flex items-center gap-2 hover:text-white">
+                <Mail size={16} /> info@fertitrade.co.mz
               </a>
             </li>
             <li>
