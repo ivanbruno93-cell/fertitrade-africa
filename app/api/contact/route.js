@@ -23,7 +23,7 @@ export async function POST(request) {
     const resend = new Resend(process.env.RESEND_API_KEY)
 
     await resend.emails.send({
-      from: 'FertiTrade Africa Website <onboarding@resend.dev>',
+      from: 'FertiTrade Africa Website <no-reply@fertitrade.co.mz>',
       to: TO_EMAIL,
       replyTo: email,
       subject: `New contact form enquiry: ${subject}`,
