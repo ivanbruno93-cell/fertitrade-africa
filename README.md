@@ -21,37 +21,44 @@ show a success message; they are **not yet wired to send anywhere** (see
 ## 2. Project structure
 
 ```
-app/                      → one folder per page (App Router)
-  page.js                 → Home
-  about/page.js
-  services/page.js        → Services (includes Import & Export section)
-  services/fertilizer-trading/page.js
-  services/commodity-trading/page.js
-  services/supply-chain-solutions/page.js
-  markets/page.js
-  contact/page.js
-  request-a-quote/page.js
-  privacy-policy/page.js
-  terms-and-conditions/page.js
-components/                → reusable pieces (Header, Footer, forms, cards…)
-public/logo.jpg             → your logo, used in Header/Footer
+app/
+  [locale]/               → all pages, served in English (/about) and Portuguese (/pt/about)
+    page.js               → Home
+    about/page.js
+    services/page.js      → Services (includes Import & Export section)
+    services/fertilizer-trading/page.js
+    services/commodity-trading/page.js
+    services/supply-chain-solutions/page.js
+    markets/page.js
+    contact/page.js
+    request-a-quote/page.js
+    privacy-policy/page.js
+    terms-and-conditions/page.js
+    layout.js             → <html lang>, Header, Footer, language provider
+    not-found.js          → localized 404
+  api/contact, api/quote  → form email delivery (Resend), not translated
+  robots.js, sitemap.js   → SEO files (sitemap lists both languages)
+components/               → reusable pieces (Header, Footer, forms, cards…)
+i18n/                     → language setup (routing, navigation helpers)
+messages/en.json          → ALL English texts
+messages/pt.json          → ALL Portuguese texts
+middleware.js             → handles the /pt prefix
+public/logo.jpg           → your logo, used in Header/Footer
 ```
 
-## 3. Connecting the forms (Contact + Request a Quote)
+## 3. Formulários (Contact + Request a Quote)
 
-Right now, submitting either form just shows "Thank you" — nothing is sent
-anywhere yet. In `components/ContactForm.js` and `components/QuoteForm.js`
-there's a `// TODO` marking exactly where to add a real submission, e.g.:
+Os dois formulários enviam email a sério, através do Resend
+(`app/api/contact/route.js` e `app/api/quote/route.js`). Precisam destas
+variáveis de ambiente (no Vercel: Settings > Environment Variables; em local:
+ficheiro `.env.local`, que NUNCA vai para o Git):
 
-```js
-await fetch('/api/quote', { method: 'POST', body: JSON.stringify(values) })
-```
+- `RESEND_API_KEY` — obrigatória.
+- `CONTACT_TO_EMAIL` / `QUOTE_TO_EMAIL` — opcionais; sem elas, os pedidos vão
+  para `info@fertitrade.co.mz`. Úteis só para testar com outro destinatário.
 
-To make that work you'd add an API route (e.g. `app/api/quote/route.js`)
-that emails you, saves to a database, or forwards to WhatsApp/CRM. Since you
-already have an Express backend for IndicoGo, the simplest path is likely
-pointing these forms at an endpoint on that backend instead of building a
-new one here — happy to wire that up once you tell me which approach you want.
+O remetente é `no-reply@fertitrade.co.mz` (domínio verificado no Resend). Se
+mudares as variáveis no Vercel, é preciso fazer Redeploy.
 
 ## 4. Deploying
 
@@ -107,14 +114,43 @@ autor): [unsplash.com](https://unsplash.com) e [pexels.com](https://pexels.com).
 Baixa a foto, renomeia para o nome exacto da tabela acima, e substitui o
 ficheiro em `public/images/`.
 
-## 6. Content still marked "confirm later"
+## 6. Idiomas (EN / PT)
 
-Per the brief, these are placeholders and **not real, confirmed information**
-— replace before launch:
-- Email: `info@fertitradeafrica.com`
-- LinkedIn link (currently a dead `#` link — no real profile provided)
-- Fertilizer/commodity product specifics (categories, origin, volumes) —
-  the two service pages have clearly marked placeholder blocks for this
+O site existe em inglês (por defeito, sem prefixo: `/about`) e em português
+(com prefixo `/pt`: `/pt/about`). Usa a biblioteca `next-intl`.
 
-The phone/WhatsApp number `+258 84 114 2911` **is treated as confirmed** and
-is live throughout the site (header, footer, contact page).
+**Editar um texto**: abre `messages/en.json` e/ou `messages/pt.json`, procura a
+frase e altera. Cada texto tem a MESMA chave nos dois ficheiros (ex.:
+`Home.whoWeAre.title`). Não é preciso mexer no código das páginas.
+
+**Adicionar uma página nova**
+1. Cria a página dentro de `app/[locale]/...` (copia uma existente como modelo:
+   tem `setRequestLocale(locale)` e `generateMetadata` com `getAlternates`).
+2. Acrescenta os textos nos DOIS ficheiros `messages/*.json`.
+3. Acrescenta o caminho em `app/sitemap.js`.
+4. Nos links internos usa `import { Link } from '@/i18n/navigation'`
+   (NUNCA `next/link`, senão o link perde o idioma).
+
+**Adicionar um terceiro idioma**: acrescenta o código em `i18n/routing.js`
+(`locales`) e cria `messages/xx.json` com as mesmas chaves.
+
+**Deteção automática do idioma do browser**: está DESLIGADA de propósito (quem
+chega a `/` vê inglês, como o cliente pediu). Para redirecionar automaticamente
+visitantes com browser em português, muda `localeDetection` para `true` em
+`i18n/routing.js`.
+
+**Emails dos formulários**: continuam em inglês (são para a equipa), mas cada
+email indica "Site language: Portuguese (PT)" ou "English (EN)" para saberem em
+que língua responder.
+
+## 7. Conteúdo ainda provisório
+
+- As páginas Privacy Policy e Terms & Conditions são placeholders: dizem
+  "This page is a placeholder". Têm de ser substituídas pelo texto legal final
+  do cliente (em `messages/en.json` e `messages/pt.json`, secção `Legal`).
+- Fertilizantes/commodities: as páginas têm blocos reservados ("Coming Soon")
+  para categorias, origem, volumes, etc., a preencher quando o cliente
+  confirmar a informação.
+
+Já confirmados e em uso: telefone/WhatsApp `+258 84 114 2911`, email
+`info@fertitrade.co.mz`, LinkedIn `linkedin.com/company/fertitrade-africa`.

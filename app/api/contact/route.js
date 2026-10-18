@@ -5,7 +5,7 @@ const TO_EMAIL = process.env.CONTACT_TO_EMAIL || 'info@fertitrade.co.mz'
 export async function POST(request) {
   try {
     const body = await request.json()
-    const { name, company, email, phone, subject, message, honeypot } = body
+    const { name, company, email, phone, subject, message, honeypot, locale } = body
 
     // Honeypot: a hidden field real visitors never fill in, but bots often do.
     if (honeypot) {
@@ -33,6 +33,7 @@ export async function POST(request) {
         `Email: ${email}`,
         `Phone: ${phone || '-'}`,
         `Subject: ${subject}`,
+        `Site language: ${locale === 'pt' ? 'Portuguese (PT)' : 'English (EN)'}`,
         '',
         'Message:',
         message,

@@ -1,8 +1,10 @@
-import Link from 'next/link'
 import Image from 'next/image'
+import { useTranslations } from 'next-intl'
+import { Link } from '@/i18n/navigation'
 import { ArrowUpRight } from 'lucide-react'
 
 export default function ServiceCard({ index, title, description, href, icon: Icon, image }) {
+  const t = useTranslations('Common')
   return (
     <div className="group flex h-full flex-col overflow-hidden rounded-sm border border-navy/10 bg-white shadow-card transition-all duration-300 hover:-translate-y-1 hover:shadow-cardHover">
       {image && (
@@ -33,7 +35,7 @@ export default function ServiceCard({ index, title, description, href, icon: Ico
           href={href}
           className="mt-6 inline-flex items-center gap-1 text-sm font-semibold text-navy transition-colors group-hover:text-green"
         >
-          Learn more
+          {t('learnMore')}
           <ArrowUpRight size={16} className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
         </Link>
       </div>

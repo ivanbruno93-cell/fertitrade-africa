@@ -1,9 +1,11 @@
 'use client'
 
 import { useState } from 'react'
+import { useLocale, useTranslations } from 'next-intl'
 import { CheckCircle2 } from 'lucide-react'
 
-const INCOTERMS = ['EXW', 'FOB', 'CFR', 'CIF', 'DAP', 'DDP', 'Other / Not sure']
+// Incoterms are international trade codes, so they are not translated.
+const INCOTERMS = ['EXW', 'FOB', 'CFR', 'CIF', 'DAP', 'DDP']
 
 const initialState = {
   fullName: '',
@@ -23,6 +25,8 @@ const initialState = {
 }
 
 export default function QuoteForm() {
+  const t = useTranslations('QuoteForm')
+  const locale = useLocale()
   const [values, setValues] = useState(initialState)
   const [errors, setErrors] = useState({})
   const [submitted, setSubmitted] = useState(false)
@@ -36,21 +40,21 @@ export default function QuoteForm() {
 
   const validate = () => {
     const next = {}
-    if (!values.fullName.trim()) next.fullName = 'Please enter your full name.'
-    if (!values.companyName.trim()) next.companyName = 'Please enter your company name.'
+    if (!values.fullName.trim()) next.fullName = t('errors.fullName')
+    if (!values.companyName.trim()) next.companyName = t('errors.companyName')
     if (!values.email.trim()) {
-      next.email = 'Please enter your email.'
+      next.email = t('errors.email')
     } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(values.email)) {
-      next.email = 'Please enter a valid email address.'
+      next.email = t('errors.emailInvalid')
     }
-    if (!values.country.trim()) next.country = 'Please enter your country.'
-    if (!values.product.trim()) next.product = 'Please enter the product or commodity.'
-    if (!values.quantity.trim()) next.quantity = 'Please enter an estimated quantity.'
-    if (!values.consent) next.consent = 'Please confirm you agree to be contacted.'
+    if (!values.country.trim()) next.country = t('errors.country')
+    if (!values.product.trim()) next.product = t('errors.product')
+    if (!values.quantity.trim()) next.quantity = t('errors.quantity')
+    if (!values.consent) next.consent = t('errors.consent')
     return next
   }
 
-    const handleSubmit = async (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
     const validationErrors = validate()
     setErrors(validationErrors)
@@ -62,16 +66,16 @@ export default function QuoteForm() {
       const res = await fetch('/api/quote', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(values),
+        body: JSON.stringify({ ...values, locale }),
       })
       const data = await res.json()
       if (!res.ok || !data.ok) {
-        throw new Error(data.error || 'Something went wrong. Please try again.')
+        throw new Error('request failed')
       }
       setSubmitted(true)
       setValues(initialState)
     } catch (err) {
-      setSubmitError(err.message)
+      setSubmitError(t('errors.generic'))
     } finally {
       setSubmitting(false)
     }
@@ -81,10 +85,8 @@ export default function QuoteForm() {
     return (
       <div className="flex flex-col items-center gap-3 rounded-sm border border-green/30 bg-green/5 p-10 text-center">
         <CheckCircle2 className="text-green" size={32} />
-        <p className="text-lg font-bold text-navy">Thank you. Your enquiry has been received.</p>
-        <p className="text-sm text-ink/60">
-          A member of our trade team will review your request and get back to you shortly.
-        </p>
+        <p className="text-lg font-bold text-navy">{t('success.title')}</p>
+        <p className="text-sm text-ink/60">{t('success.text')}</p>
       </div>
     )
   }
@@ -92,26 +94,26 @@ export default function QuoteForm() {
   return (
     <form onSubmit={handleSubmit} noValidate className="space-y-5">
       <div className="grid gap-5 md:grid-cols-2">
-        <Field label="Full Name" name="fullName" value={values.fullName} onChange={handleChange} error={errors.fullName} required />
-        <Field label="Company Name" name="companyName" value={values.companyName} onChange={handleChange} error={errors.companyName} required />
+        <Field label={t('labels.fullName')} name="fullName" value={values.fullName} onChange={handleChange} error={errors.fullName} required />
+        <Field label={t('labels.companyName')} name="companyName" value={values.companyName} onChange={handleChange} error={errors.companyName} required />
       </div>
       <div className="grid gap-5 md:grid-cols-2">
-        <Field label="Email" name="email" type="email" value={values.email} onChange={handleChange} error={errors.email} required />
-        <Field label="Phone" name="phone" type="tel" value={values.phone} onChange={handleChange} />
+        <Field label={t('labels.email')} name="email" type="email" value={values.email} onChange={handleChange} error={errors.email} required />
+        <Field label={t('labels.phone')} name="phone" type="tel" value={values.phone} onChange={handleChange} />
       </div>
       <div className="grid gap-5 md:grid-cols-2">
-        <Field label="Country" name="country" value={values.country} onChange={handleChange} error={errors.country} required />
-        <Field label="Product / Commodity" name="product" value={values.product} onChange={handleChange} error={errors.product} required />
+        <Field label={t('labels.country')} name="country" value={values.country} onChange={handleChange} error={errors.country} required />
+        <Field label={t('labels.product')} name="product" value={values.product} onChange={handleChange} error={errors.product} required />
       </div>
       <div className="grid gap-5 md:grid-cols-3">
-        <Field label="Quantity" name="quantity" value={values.quantity} onChange={handleChange} error={errors.quantity} required />
-        <Field label="Origin" name="origin" value={values.origin} onChange={handleChange} />
-        <Field label="Destination" name="destination" value={values.destination} onChange={handleChange} />
+        <Field label={t('labels.quantity')} name="quantity" value={values.quantity} onChange={handleChange} error={errors.quantity} required />
+        <Field label={t('labels.origin')} name="origin" value={values.origin} onChange={handleChange} />
+        <Field label={t('labels.destination')} name="destination" value={values.destination} onChange={handleChange} />
       </div>
       <div className="grid gap-5 md:grid-cols-2">
         <div>
           <label htmlFor="incoterm" className="mb-1.5 block text-sm font-semibold text-navy">
-            Preferred Incoterm
+            {t('labels.incoterm')}
           </label>
           <select
             id="incoterm"
@@ -120,17 +122,18 @@ export default function QuoteForm() {
             onChange={handleChange}
             className="w-full rounded-sm border border-navy/15 bg-white px-4 py-3 text-sm text-ink outline-none transition-colors focus:border-green"
           >
-            <option value="">Select an option</option>
+            <option value="">{t('selectOption')}</option>
             {INCOTERMS.map((term) => (
               <option key={term} value={term}>{term}</option>
             ))}
+            <option value="Other / Not sure">{t('incotermOther')}</option>
           </select>
         </div>
-        <Field label="Required Delivery Date" name="deliveryDate" type="date" value={values.deliveryDate} onChange={handleChange} />
+        <Field label={t('labels.deliveryDate')} name="deliveryDate" type="date" value={values.deliveryDate} onChange={handleChange} />
       </div>
       <div>
         <label htmlFor="additionalInfo" className="mb-1.5 block text-sm font-semibold text-navy">
-          Additional Information
+          {t('labels.additionalInfo')}
         </label>
         <textarea
           id="additionalInfo"
@@ -150,12 +153,12 @@ export default function QuoteForm() {
           onChange={handleChange}
           className="mt-0.5 h-4 w-4 flex-none accent-green"
         />
-        I agree to be contacted regarding my enquiry.
+        {t('consent')}
       </label>
       {errors.consent && <p className="-mt-3 text-xs text-red-500">{errors.consent}</p>}
 
-            <button type="submit" disabled={submitting} className="btn-primary w-full disabled:opacity-60 sm:w-auto">
-        {submitting ? 'Submitting...' : 'Submit Request'}
+      <button type="submit" disabled={submitting} className="btn-primary w-full disabled:opacity-60 sm:w-auto">
+        {submitting ? t('submitting') : t('submit')}
       </button>
       {submitError && <p className="text-sm text-red-500">{submitError}</p>}
 

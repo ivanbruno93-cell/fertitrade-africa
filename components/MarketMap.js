@@ -1,12 +1,15 @@
+import { useTranslations } from 'next-intl'
+
 const REGIONS = [
-  { label: 'Zimbabwe', angle: -55 },
-  { label: 'Zambia', angle: -20 },
-  { label: 'Malawi', angle: 15 },
-  { label: 'DRC', angle: 50 },
-  { label: 'Southern Africa', angle: -90 },
+  { key: 'zimbabwe', angle: -55 },
+  { key: 'zambia', angle: -20 },
+  { key: 'malawi', angle: 15 },
+  { key: 'drc', angle: 50 },
+  { key: 'southernAfrica', angle: -90 },
 ]
 
 export default function MarketMap({ tone = 'light' }) {
+  const t = useTranslations('Markets.map')
   const isDark = tone === 'dark'
   const cx = 300
   const cy = 220
@@ -18,13 +21,13 @@ export default function MarketMap({ tone = 'light' }) {
 
   return (
     <div className="w-full">
-      <svg viewBox="0 0 600 440" className="w-full" role="img" aria-label="Regional connectivity diagram from Beira, Mozambique">
+      <svg viewBox="0 0 600 440" className="w-full" role="img" aria-label={t('ariaLabel')}>
         {REGIONS.map((region) => {
           const rad = (region.angle * Math.PI) / 180
           const x = cx + r * Math.cos(rad)
           const y = cy + r * Math.sin(rad)
           return (
-            <g key={region.label}>
+            <g key={region.key}>
               <line x1={cx} y1={cy} x2={x} y2={y} stroke={lineColor} strokeOpacity={lineOpacity} strokeWidth="1.5" />
               <circle cx={x} cy={y} r="5" fill="#69B83F" />
               <text
@@ -33,7 +36,7 @@ export default function MarketMap({ tone = 'light' }) {
                 textAnchor="middle"
                 className={labelClass}
               >
-                {region.label}
+                {t(`regions.${region.key}`)}
               </text>
             </g>
           )
@@ -44,11 +47,11 @@ export default function MarketMap({ tone = 'light' }) {
           BEIRA
         </text>
         <text x={cx} y={cy + 14} textAnchor="middle" className="fill-white/80 text-[11px]">
-          Mozambique
+          {t('mozambique')}
         </text>
       </svg>
       <p className={`mt-3 text-center text-sm font-bold uppercase tracking-[0.18em] ${isDark ? 'text-green-light' : 'text-green'}`}>
-        Regional Connectivity
+        {t('caption')}
       </p>
     </div>
   )

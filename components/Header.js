@@ -1,19 +1,22 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import Link from 'next/link'
 import Image from 'next/image'
+import { useTranslations } from 'next-intl'
 import { Menu, X } from 'lucide-react'
+import { Link } from '@/i18n/navigation'
+import LanguageSwitcher from './LanguageSwitcher'
 
 const NAV_LINKS = [
-  { label: 'Home', href: '/' },
-  { label: 'About', href: '/about' },
-  { label: 'Services', href: '/services' },
-  { label: 'Markets', href: '/markets' },
-  { label: 'Contact', href: '/contact' },
+  { key: 'home', href: '/' },
+  { key: 'about', href: '/about' },
+  { key: 'services', href: '/services' },
+  { key: 'markets', href: '/markets' },
+  { key: 'contact', href: '/contact' },
 ]
 
 export default function Header() {
+  const t = useTranslations('Nav')
   const [scrolled, setScrolled] = useState(false)
   const [open, setOpen] = useState(false)
 
@@ -52,26 +55,30 @@ export default function Header() {
               href={link.href}
               className="text-sm font-semibold text-navy/80 transition-colors hover:text-green"
             >
-              {link.label}
+              {t(link.key)}
             </Link>
           ))}
         </nav>
 
-        <div className="hidden lg:block">
+        <div className="hidden items-center gap-4 lg:flex">
+          <LanguageSwitcher />
           <Link href="/request-a-quote" className="btn-primary">
-            Request a Quote
+            {t('requestQuote')}
           </Link>
         </div>
 
-        <button
-          type="button"
-          aria-label={open ? 'Close menu' : 'Open menu'}
-          aria-expanded={open}
-          className="flex h-10 w-10 items-center justify-center text-navy lg:hidden"
-          onClick={() => setOpen((v) => !v)}
-        >
-          {open ? <X size={26} /> : <Menu size={26} />}
-        </button>
+        <div className="flex items-center gap-3 lg:hidden">
+          <LanguageSwitcher />
+          <button
+            type="button"
+            aria-label={open ? t('closeMenu') : t('openMenu')}
+            aria-expanded={open}
+            className="flex h-10 w-10 items-center justify-center text-navy"
+            onClick={() => setOpen((v) => !v)}
+          >
+            {open ? <X size={26} /> : <Menu size={26} />}
+          </button>
+        </div>
       </div>
 
       {open && (
@@ -84,7 +91,7 @@ export default function Header() {
                 className="rounded-sm px-2 py-3 text-sm font-semibold text-navy hover:bg-surface"
                 onClick={() => setOpen(false)}
               >
-                {link.label}
+                {t(link.key)}
               </Link>
             ))}
             <Link
@@ -92,7 +99,7 @@ export default function Header() {
               className="btn-primary mt-2 w-full"
               onClick={() => setOpen(false)}
             >
-              Request a Quote
+              {t('requestQuote')}
             </Link>
           </nav>
         </div>

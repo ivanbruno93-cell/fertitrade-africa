@@ -2,18 +2,20 @@
 
 import { useEffect, useRef, useState } from 'react'
 import Image from 'next/image'
+import { useTranslations } from 'next-intl'
 
 const SLIDES = [
-  { src: '/images/hero-slides/hero-slide-1-field.jpg', alt: 'Agricultural fields' },
-  { src: '/images/hero-slides/hero-slide-2-port.jpg', alt: 'Port operations' },
-  { src: '/images/hero-slides/hero-slide-3-vessel.jpg', alt: 'Cargo vessel at sea' },
-  { src: '/images/hero-slides/hero-slide-4-transport.jpg', alt: 'Road transport and logistics' },
-  { src: '/images/hero-slides/hero-slide-5-warehouse.jpg', alt: 'Warehouse and storage' },
+  { src: '/images/hero-slides/hero-slide-1-field.jpg', key: 'field' },
+  { src: '/images/hero-slides/hero-slide-2-port.jpg', key: 'port' },
+  { src: '/images/hero-slides/hero-slide-3-vessel.jpg', key: 'vessel' },
+  { src: '/images/hero-slides/hero-slide-4-transport.jpg', key: 'transport' },
+  { src: '/images/hero-slides/hero-slide-5-warehouse.jpg', key: 'warehouse' },
 ]
 
 const INTERVAL_MS = 5000
 
 export default function HeroCarousel({ className = '' }) {
+  const t = useTranslations('Hero')
   const [active, setActive] = useState(0)
   const [paused, setPaused] = useState(false)
   const [reducedMotion, setReducedMotion] = useState(false)
@@ -47,7 +49,7 @@ export default function HeroCarousel({ className = '' }) {
         <Image
           key={slide.src}
           src={slide.src}
-          alt={slide.alt}
+          alt={t(`slides.${slide.key}`)}
           fill
           priority={i === 0}
           sizes="(min-width: 1024px) 50vw, 100vw"
@@ -66,7 +68,7 @@ export default function HeroCarousel({ className = '' }) {
               key={slide.src}
               type="button"
               onClick={() => setActive(i)}
-              aria-label={`Show slide ${i + 1}: ${slide.alt}`}
+              aria-label={t('showSlide', { n: i + 1, alt: t(`slides.${slide.key}`) })}
               aria-current={i === active}
               className={`h-1.5 rounded-full transition-all ${
                 i === active ? 'w-6 bg-white' : 'w-1.5 bg-white/40 hover:bg-white/70'

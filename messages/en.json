@@ -1,0 +1,555 @@
+{
+  "Metadata": {
+    "siteTitle": "FertiTrade Africa | Trading & Supply Chain Solutions in Africa",
+    "siteDescription": "FertiTrade Africa connects suppliers, customers and markets through fertilizer trading, import & export, commodity trading and integrated supply chain solutions. Based in Beira, Mozambique.",
+    "ogDescription": "Connecting suppliers, customers and markets through fertilizer trading, import & export, commodity trading and integrated supply chain solutions.",
+    "keywords": [
+      "FertiTrade Africa",
+      "fertilizer trading Africa",
+      "fertilizer trading Mozambique",
+      "commodity trading Africa",
+      "import export Mozambique",
+      "supply chain Mozambique",
+      "supply chain Africa",
+      "Beira Mozambique",
+      "African trade",
+      "fertilizer supply Africa",
+      "commodity trading Mozambique"
+    ],
+    "about": {
+      "title": "About Us",
+      "description": "FertiTrade Africa is a Mozambique-based trading and supply chain solutions company connecting suppliers, customers and markets across Africa and beyond."
+    },
+    "services": {
+      "title": "Our Services",
+      "description": "Fertilizer trading, import & export, commodity trading and integrated supply chain solutions from FertiTrade Africa."
+    },
+    "fertilizer": {
+      "title": "Fertilizer Trading",
+      "description": "FertiTrade Africa supports agricultural growth through reliable fertilizer sourcing and trading, connecting suppliers with agricultural markets across Africa."
+    },
+    "commodity": {
+      "title": "Commodity Trading",
+      "description": "FertiTrade Africa connects commodity supply with market demand, acting as an intermediary and trade partner across regional and international markets."
+    },
+    "supplyChain": {
+      "title": "Integrated Supply Chain Solutions",
+      "description": "FertiTrade Africa coordinates sourcing, procurement, trade and logistics to support efficient product movement from source to market."
+    },
+    "markets": {
+      "title": "Markets We Serve",
+      "description": "FertiTrade Africa is positioned to connect suppliers and customers across regional and international markets, from its base in Beira, Mozambique."
+    },
+    "contact": {
+      "title": "Contact",
+      "description": "Get in touch with FertiTrade Africa. Headquartered in Beira, Mozambique, connecting suppliers, buyers and markets across Africa."
+    },
+    "quote": {
+      "title": "Request a Quote",
+      "description": "Request a trade quote from FertiTrade Africa for fertilizer, commodity or supply chain enquiries."
+    },
+    "privacy": {
+      "title": "Privacy Policy"
+    },
+    "terms": {
+      "title": "Terms & Conditions"
+    },
+    "notFound": {
+      "title": "Page Not Found"
+    }
+  },
+
+  "Nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "markets": "Markets",
+    "contact": "Contact",
+    "requestQuote": "Request a Quote",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
+
+  "Language": {
+    "label": "Language",
+    "en": "English",
+    "pt": "Português"
+  },
+
+  "Common": {
+    "learnMore": "Learn more",
+    "requestQuote": "Request a Quote",
+    "contactUs": "Contact Us"
+  },
+
+  "Footer": {
+    "tagline": "Connecting Markets. Growing Africa.",
+    "company": "Company",
+    "services": "Services",
+    "contact": "Contact",
+    "aboutUs": "About Us",
+    "ourServices": "Our Services",
+    "markets": "Markets",
+    "contactLink": "Contact",
+    "fertilizerTrading": "Fertilizer Trading",
+    "importExport": "Import & Export",
+    "commodityTrading": "Commodity Trading",
+    "supplyChainSolutions": "Supply Chain Solutions",
+    "location": "Beira, Mozambique",
+    "whatsapp": "WhatsApp",
+    "linkedin": "LinkedIn",
+    "rights": "© {year} FertiTrade Africa. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms & Conditions"
+  },
+
+  "Flow": {
+    "supply": "Supply",
+    "trade": "Trade",
+    "logistics": "Logistics",
+    "market": "Market",
+    "source": "Source",
+    "procurement": "Procurement",
+    "transport": "Transport",
+    "port": "Port"
+  },
+
+  "Hero": {
+    "badge": "Based in Beira, Mozambique",
+    "titleLine1": "Connecting Markets.",
+    "titleLine2": "Growing Africa.",
+    "subtitle": "Trade, supply chain and market solutions connecting suppliers, customers and opportunities across Africa and beyond.",
+    "exploreServices": "Explore Our Services",
+    "requestQuote": "Request a Quote",
+    "slides": {
+      "field": "Agricultural fields",
+      "port": "Port operations",
+      "vessel": "Cargo vessel at sea",
+      "transport": "Road transport and logistics",
+      "warehouse": "Warehouse and storage"
+    },
+    "showSlide": "Show slide {n}: {alt}"
+  },
+
+  "CTA": {
+    "title": "Let's Connect Markets and Create Opportunities.",
+    "description": "Tell us about the market you're looking to reach or supply. Let's discuss how FertiTrade Africa can help.",
+    "requestQuote": "Request a Quote",
+    "contactUs": "Contact Us"
+  },
+
+  "ServiceItems": {
+    "fertilizer": {
+      "title": "Fertilizer Trading",
+      "description": "Sourcing and trading fertilizer products, connecting suppliers with agricultural markets and customers across Africa."
+    },
+    "importExport": {
+      "title": "Import & Export",
+      "description": "Supporting international trade operations through sourcing, coordination and movement of products across borders and markets."
+    },
+    "commodity": {
+      "title": "Commodity Trading",
+      "description": "Connecting producers, suppliers and buyers through practical commodity trading solutions across regional and international markets."
+    },
+    "supplyChain": {
+      "title": "Integrated Supply Chain Solutions",
+      "description": "Coordinating supply chain activities to support efficient product movement from source to destination."
+    }
+  },
+
+  "Home": {
+    "whoWeAre": {
+      "eyebrow": "Who We Are",
+      "title": "Connecting Supply and Demand Across Africa",
+      "description": "FertiTrade Africa is a Mozambique-based trading and supply chain solutions company connecting suppliers, customers and markets across Africa and beyond.",
+      "body": "Our business is built around fertilizer trading, import and export services, commodity trade and integrated supply chain solutions, supporting the efficient movement of products from source to market.",
+      "cta": "Learn More About Us",
+      "imageAlt": "Ship, port and agricultural trade across Africa"
+    },
+    "why": {
+      "eyebrow": "Why FertiTrade Africa",
+      "title": "Built to Connect, Trade and Deliver",
+      "pillars": {
+        "location": {
+          "subtitle": "Beira, Mozambique",
+          "title": "Strategic Location",
+          "description": "Our strategic location provides access to key trade corridors in Southern Africa."
+        },
+        "connectivity": {
+          "subtitle": "Connecting Suppliers & Buyers",
+          "title": "Market Connectivity",
+          "description": "We facilitate connections between suppliers, buyers and markets."
+        },
+        "expertise": {
+          "subtitle": "From Source to Market",
+          "title": "Supply Chain Expertise",
+          "description": "We support the efficient movement of products from origin to destination."
+        },
+        "growth": {
+          "subtitle": "Building Regional Opportunities",
+          "title": "African Growth",
+          "description": "We create commercial solutions oriented toward the growth of African markets."
+        }
+      }
+    },
+    "services": {
+      "eyebrow": "What We Do",
+      "title": "Our Services",
+      "description": "Practical trade and supply chain solutions designed to move products efficiently from source to market."
+    },
+    "location": {
+      "eyebrow": "Strategic Location",
+      "title": "Strategically Located in Beira",
+      "description": "Headquartered in Beira, Mozambique, FertiTrade Africa is strategically positioned along one of Southern Africa's key trade corridors, enabling us to serve local, regional and international markets."
+    }
+  },
+
+  "About": {
+    "hero": {
+      "eyebrow": "About Us",
+      "title": "About FertiTrade Africa",
+      "intro": "FertiTrade Africa is a Mozambique-based trading and supply chain solutions company connecting suppliers, customers and markets across Africa and beyond."
+    },
+    "body": "Our business is built around fertilizer trading, import and export services, commodity trade and integrated supply chain solutions, supporting the efficient movement of products from source to market.",
+    "mission": {
+      "title": "Our Mission",
+      "text": "To connect supply and demand through reliable trade relationships and practical supply chain solutions."
+    },
+    "vision": {
+      "title": "Our Vision",
+      "text": "To become a trusted African trading and supply chain partner connecting markets, enabling trade and contributing to regional growth."
+    },
+    "approach": {
+      "title": "Our Approach",
+      "text": "Strong partnerships. Operational excellence. Practical trade solutions."
+    },
+    "values": {
+      "eyebrow": "Our Values",
+      "title": "What Guides How We Work",
+      "items": {
+        "reliability": {
+          "title": "Reliability",
+          "description": "We build relationships based on trust, consistency and accountability."
+        },
+        "partnership": {
+          "title": "Partnership",
+          "description": "We believe long-term trade is built through strong relationships."
+        },
+        "excellence": {
+          "title": "Operational Excellence",
+          "description": "We focus on efficient execution and practical solutions."
+        },
+        "growth": {
+          "title": "Growth",
+          "description": "We seek to create sustainable opportunities across African markets."
+        }
+      }
+    },
+    "process": {
+      "eyebrow": "How We Work",
+      "title": "Our Trade Process",
+      "steps": {
+        "understand": {
+          "title": "Understand",
+          "description": "Understand customer requirements and market needs."
+        },
+        "source": {
+          "title": "Source",
+          "description": "Identify and connect suitable suppliers and products."
+        },
+        "coordinate": {
+          "title": "Coordinate",
+          "description": "Coordinate commercial, documentation and supply chain requirements."
+        },
+        "move": {
+          "title": "Move",
+          "description": "Support efficient movement from origin to destination."
+        },
+        "deliver": {
+          "title": "Deliver",
+          "description": "Connect products with the intended market."
+        }
+      }
+    }
+  },
+
+  "Services": {
+    "hero": {
+      "eyebrow": "What We Do",
+      "title": "Our Services",
+      "intro": "Practical trade and supply chain solutions designed to move products efficiently from source to market."
+    },
+    "importExport": {
+      "eyebrow": "Service 02",
+      "title": "Import & Export Services",
+      "description": "FertiTrade Africa supports international trade operations, connecting suppliers, buyers and markets through an integrated approach.",
+      "steps": {
+        "sourcing": {
+          "title": "Sourcing",
+          "description": "Identifying suitable suppliers and products for the requirement."
+        },
+        "commercial": {
+          "title": "Commercial Coordination",
+          "description": "Aligning terms between suppliers and buyers."
+        },
+        "documentation": {
+          "title": "Documentation",
+          "description": "Preparing and coordinating trade documentation."
+        },
+        "logistics": {
+          "title": "Logistics Coordination",
+          "description": "Arranging transport and handling across the supply chain."
+        },
+        "shipment": {
+          "title": "Shipment",
+          "description": "Coordinating the movement of goods to port and onward."
+        },
+        "delivery": {
+          "title": "Delivery",
+          "description": "Connecting the shipment with its intended destination."
+        }
+      }
+    }
+  },
+
+  "Fertilizer": {
+    "hero": {
+      "eyebrow": "Service 01",
+      "title": "Fertilizer Trading",
+      "subtitle": "Supporting Agricultural Growth Through Reliable Fertilizer Supply"
+    },
+    "body": "FertiTrade Africa sources and trades fertilizer products, connecting suppliers with agricultural markets and customers across Africa. Our role is to bring reliable supply relationships to farmers, distributors and agricultural businesses that depend on consistent access to fertilizer.",
+    "cta": "Request Fertilizer Quote",
+    "info": {
+      "eyebrow": "Coming Soon",
+      "title": "Product Information",
+      "description": "The sections below are reserved for detailed product information as it becomes available. Get in touch for current fertilizer sourcing enquiries.",
+      "placeholder": "To be added as supplier information is confirmed.",
+      "areas": {
+        "categories": "Product Categories",
+        "specifications": "Fertilizer Specifications",
+        "origin": "Origin",
+        "packaging": "Packaging",
+        "volumes": "Available Volumes",
+        "documentation": "Technical Documentation"
+      }
+    },
+    "ctaSection": {
+      "title": "Have a Fertilizer Requirement?",
+      "description": "Tell us what you need and our team will follow up on sourcing and availability."
+    }
+  },
+
+  "Commodity": {
+    "hero": {
+      "eyebrow": "Service 03",
+      "title": "Commodity Trading",
+      "subtitle": "Connecting Commodity Supply with Market Demand"
+    },
+    "body": "FertiTrade Africa acts as an intermediary and commercial partner, connecting producers, suppliers and buyers through practical commodity trading solutions across regional and international markets.",
+    "cta": "Discuss a Trade Opportunity",
+    "info": {
+      "eyebrow": "Coming Soon",
+      "title": "Traded Commodity Categories",
+      "description": "The categories below are reserved for confirmed commodities as trade relationships develop. Get in touch to discuss a specific opportunity.",
+      "placeholder": "To be added as trade relationships are confirmed.",
+      "areas": {
+        "agricultural": "Agricultural Commodities",
+        "industrial": "Industrial Commodities",
+        "bulk": "Bulk Products",
+        "other": "Other Traded Products"
+      }
+    },
+    "ctaSection": {
+      "title": "Have a Commodity to Trade?",
+      "description": "Whether you supply or need to source a commodity, let's discuss the opportunity."
+    }
+  },
+
+  "SupplyChain": {
+    "hero": {
+      "eyebrow": "Service 04",
+      "title": "Integrated Supply Chain Solutions",
+      "intro": "We coordinate sourcing, procurement, trade and logistics to support efficient product movement from source to market, aiming to increase efficiency, visibility and reliability at every step."
+    },
+    "ecosystem": {
+      "eyebrow": "Our Ecosystem",
+      "title": "Source to Market, Coordinated"
+    },
+    "cards": {
+      "sourcing": {
+        "title": "Sourcing",
+        "description": "Identifying suitable suppliers and products for the requirement."
+      },
+      "procurement": {
+        "title": "Procurement",
+        "description": "Coordinating commercial terms and purchase requirements."
+      },
+      "tradeCoordination": {
+        "title": "Trade Coordination",
+        "description": "Aligning suppliers, buyers and commercial terms."
+      },
+      "logisticsCoordination": {
+        "title": "Logistics Coordination",
+        "description": "Arranging transport across the supply chain."
+      },
+      "documentation": {
+        "title": "Documentation",
+        "description": "Preparing and coordinating trade documentation."
+      },
+      "marketDelivery": {
+        "title": "Market Delivery",
+        "description": "Connecting products with their intended market."
+      }
+    }
+  },
+
+  "Markets": {
+    "hero": {
+      "eyebrow": "Markets We Serve",
+      "title": "Connecting Opportunities Across Africa and Beyond",
+      "intro": "Our platform is positioned to connect suppliers and customers across regional and international markets."
+    },
+    "location": {
+      "eyebrow": "Strategic Location",
+      "title": "Strategically Located in Beira",
+      "description": "Headquartered in Beira, Mozambique, FertiTrade Africa is strategically positioned along one of Southern Africa's key trade corridors, enabling us to serve local, regional and international markets.",
+      "imageAlt": "Port of Beira, Mozambique"
+    },
+    "regions": {
+      "eyebrow": "Regional Connectivity",
+      "title": "Markets and Corridors We Are Positioned to Serve",
+      "description": "These regions represent relevant markets and trade corridors for our platform, not a confirmation of existing operations in each market.",
+      "items": {
+        "southern": {
+          "title": "Southern Africa",
+          "description": "Beira sits along one of the region's key trade corridors, positioning our platform to serve markets including Mozambique, Zimbabwe, Zambia and Malawi."
+        },
+        "regional": {
+          "title": "Regional Markets",
+          "description": "We work to connect suppliers and buyers across neighbouring markets that rely on Beira as a gateway."
+        },
+        "international": {
+          "title": "International Markets",
+          "description": "Our platform is positioned to connect suppliers and customers across regional and international markets."
+        }
+      }
+    },
+    "cta": {
+      "title": "Exploring a Market Opportunity?",
+      "description": "Tell us about the market you're looking to reach or supply, and let's discuss how we can help."
+    },
+    "map": {
+      "ariaLabel": "Regional connectivity diagram from Beira, Mozambique",
+      "mozambique": "Mozambique",
+      "caption": "Regional Connectivity",
+      "regions": {
+        "zimbabwe": "Zimbabwe",
+        "zambia": "Zambia",
+        "malawi": "Malawi",
+        "drc": "DRC",
+        "southernAfrica": "Southern Africa"
+      }
+    }
+  },
+
+  "Contact": {
+    "hero": {
+      "eyebrow": "Contact",
+      "title": "Let's Talk Trade",
+      "intro": "Whether you are a supplier, buyer, distributor or strategic partner, we'd like to hear from you."
+    },
+    "location": "Beira, Mozambique",
+    "whatsapp": "WhatsApp",
+    "linkedin": "LinkedIn"
+  },
+
+  "Quote": {
+    "hero": {
+      "eyebrow": "Request a Quote",
+      "title": "Request a Quote",
+      "intro": "Tell us about your requirement and our trade team will follow up with next steps."
+    }
+  },
+
+  "ContactForm": {
+    "labels": {
+      "name": "Name",
+      "company": "Company",
+      "email": "Email",
+      "phone": "Phone",
+      "subject": "Subject",
+      "message": "Message"
+    },
+    "errors": {
+      "name": "Please enter your name.",
+      "email": "Please enter your email.",
+      "emailInvalid": "Please enter a valid email address.",
+      "subject": "Please enter a subject.",
+      "message": "Please enter your message.",
+      "generic": "Something went wrong. Please try again."
+    },
+    "submit": "Send Message",
+    "sending": "Sending...",
+    "success": {
+      "title": "Thank you. Your enquiry has been received.",
+      "text": "Our team will get back to you shortly."
+    }
+  },
+
+  "QuoteForm": {
+    "labels": {
+      "fullName": "Full Name",
+      "companyName": "Company Name",
+      "email": "Email",
+      "phone": "Phone",
+      "country": "Country",
+      "product": "Product / Commodity",
+      "quantity": "Quantity",
+      "origin": "Origin",
+      "destination": "Destination",
+      "incoterm": "Preferred Incoterm",
+      "deliveryDate": "Required Delivery Date",
+      "additionalInfo": "Additional Information"
+    },
+    "selectOption": "Select an option",
+    "incotermOther": "Other / Not sure",
+    "consent": "I agree to be contacted regarding my enquiry.",
+    "errors": {
+      "fullName": "Please enter your full name.",
+      "companyName": "Please enter your company name.",
+      "email": "Please enter your email.",
+      "emailInvalid": "Please enter a valid email address.",
+      "country": "Please enter your country.",
+      "product": "Please enter the product or commodity.",
+      "quantity": "Please enter an estimated quantity.",
+      "consent": "Please confirm you agree to be contacted.",
+      "generic": "Something went wrong. Please try again."
+    },
+    "submit": "Submit Request",
+    "submitting": "Submitting...",
+    "success": {
+      "title": "Thank you. Your enquiry has been received.",
+      "text": "A member of our trade team will review your request and get back to you shortly."
+    }
+  },
+
+  "Legal": {
+    "eyebrow": "Legal",
+    "privacy": {
+      "title": "Privacy Policy",
+      "body": "This page is a placeholder. FertiTrade Africa's full privacy policy, describing how enquiry and contact form data submitted on this site is collected, used and stored, will be published here once finalised. For questions about your data in the meantime, contact us at <email>info@fertitrade.co.mz</email>."
+    },
+    "terms": {
+      "title": "Terms & Conditions",
+      "body": "This page is a placeholder. FertiTrade Africa's terms and conditions of use for this website will be published here once finalised. For questions in the meantime, contact us at <email>info@fertitrade.co.mz</email>."
+    }
+  },
+
+  "NotFound": {
+    "eyebrow": "404",
+    "title": "Page Not Found",
+    "text": "The page you're looking for doesn't exist or may have moved.",
+    "back": "Back to Home"
+  }
+}

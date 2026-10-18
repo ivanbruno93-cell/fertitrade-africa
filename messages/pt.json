@@ -1,0 +1,555 @@
+{
+  "Metadata": {
+    "siteTitle": "FertiTrade Africa | Soluções de Comércio e Cadeia de Abastecimento em África",
+    "siteDescription": "A FertiTrade Africa conecta fornecedores, clientes e mercados através do comércio de fertilizantes, importação e exportação, comércio de commodities e soluções integradas de cadeia de abastecimento. Sediada na Beira, Moçambique.",
+    "ogDescription": "Conectamos fornecedores, clientes e mercados através do comércio de fertilizantes, importação e exportação, comércio de commodities e soluções integradas de cadeia de abastecimento.",
+    "keywords": [
+      "FertiTrade Africa",
+      "comércio de fertilizantes África",
+      "comércio de fertilizantes Moçambique",
+      "comércio de commodities África",
+      "importação e exportação Moçambique",
+      "cadeia de abastecimento Moçambique",
+      "cadeia de abastecimento África",
+      "Beira Moçambique",
+      "comércio africano",
+      "fornecimento de fertilizantes África",
+      "comércio de commodities Moçambique"
+    ],
+    "about": {
+      "title": "Sobre Nós",
+      "description": "A FertiTrade Africa é uma empresa sediada em Moçambique, especializada em comércio e soluções de cadeia de abastecimento, que conecta fornecedores, clientes e mercados em África e para além do continente."
+    },
+    "services": {
+      "title": "Os Nossos Serviços",
+      "description": "Comércio de fertilizantes, importação e exportação, comércio de commodities e soluções integradas de cadeia de abastecimento da FertiTrade Africa."
+    },
+    "fertilizer": {
+      "title": "Comércio de Fertilizantes",
+      "description": "A FertiTrade Africa apoia o crescimento agrícola através do fornecimento e comércio fiável de fertilizantes, conectando fornecedores a mercados agrícolas em toda a África."
+    },
+    "commodity": {
+      "title": "Comércio de Commodities",
+      "description": "A FertiTrade Africa conecta a oferta de commodities à procura do mercado, desempenhando o papel de intermediária e parceira comercial em mercados regionais e internacionais."
+    },
+    "supplyChain": {
+      "title": "Soluções Integradas de Cadeia de Abastecimento",
+      "description": "A FertiTrade Africa coordena a identificação de fornecedores, as aquisições, o comércio e a logística para apoiar a movimentação eficiente de produtos da origem ao mercado."
+    },
+    "markets": {
+      "title": "Mercados que Servimos",
+      "description": "A FertiTrade Africa está posicionada para conectar fornecedores e clientes em mercados regionais e internacionais, a partir da sua base na Beira, Moçambique."
+    },
+    "contact": {
+      "title": "Contacto",
+      "description": "Entre em contacto com a FertiTrade Africa. Com sede na Beira, Moçambique, conectamos fornecedores, compradores e mercados em toda a África."
+    },
+    "quote": {
+      "title": "Pedir Cotação",
+      "description": "Peça uma cotação à FertiTrade Africa para consultas sobre fertilizantes, commodities ou cadeia de abastecimento."
+    },
+    "privacy": {
+      "title": "Política de Privacidade"
+    },
+    "terms": {
+      "title": "Termos e Condições"
+    },
+    "notFound": {
+      "title": "Página Não Encontrada"
+    }
+  },
+
+  "Nav": {
+    "home": "Início",
+    "about": "Sobre",
+    "services": "Serviços",
+    "markets": "Mercados",
+    "contact": "Contacto",
+    "requestQuote": "Pedir Cotação",
+    "openMenu": "Abrir menu",
+    "closeMenu": "Fechar menu"
+  },
+
+  "Language": {
+    "label": "Idioma",
+    "en": "English",
+    "pt": "Português"
+  },
+
+  "Common": {
+    "learnMore": "Saber mais",
+    "requestQuote": "Pedir Cotação",
+    "contactUs": "Contacte-nos"
+  },
+
+  "Footer": {
+    "tagline": "Conectar Mercados. Fazer Crescer África.",
+    "company": "Empresa",
+    "services": "Serviços",
+    "contact": "Contacto",
+    "aboutUs": "Sobre Nós",
+    "ourServices": "Os Nossos Serviços",
+    "markets": "Mercados",
+    "contactLink": "Contacto",
+    "fertilizerTrading": "Comércio de Fertilizantes",
+    "importExport": "Importação e Exportação",
+    "commodityTrading": "Comércio de Commodities",
+    "supplyChainSolutions": "Soluções de Cadeia de Abastecimento",
+    "location": "Beira, Moçambique",
+    "whatsapp": "WhatsApp",
+    "linkedin": "LinkedIn",
+    "rights": "© {year} FertiTrade Africa. Todos os direitos reservados.",
+    "privacy": "Política de Privacidade",
+    "terms": "Termos e Condições"
+  },
+
+  "Flow": {
+    "supply": "Fornecimento",
+    "trade": "Comércio",
+    "logistics": "Logística",
+    "market": "Mercado",
+    "source": "Origem",
+    "procurement": "Aquisições",
+    "transport": "Transporte",
+    "port": "Porto"
+  },
+
+  "Hero": {
+    "badge": "Sediada na Beira, Moçambique",
+    "titleLine1": "Conectar Mercados.",
+    "titleLine2": "Fazer Crescer África.",
+    "subtitle": "Soluções de comércio, cadeia de abastecimento e mercado que conectam fornecedores, clientes e oportunidades em África e para além do continente.",
+    "exploreServices": "Conheça os Nossos Serviços",
+    "requestQuote": "Pedir Cotação",
+    "slides": {
+      "field": "Campos agrícolas",
+      "port": "Operações portuárias",
+      "vessel": "Navio de carga no mar",
+      "transport": "Transporte rodoviário e logística",
+      "warehouse": "Armazém e armazenamento"
+    },
+    "showSlide": "Mostrar imagem {n}: {alt}"
+  },
+
+  "CTA": {
+    "title": "Conectar Mercados e Criar Oportunidades.",
+    "description": "Fale-nos do mercado que pretende alcançar ou abastecer. Vamos ver como a FertiTrade Africa pode ajudar.",
+    "requestQuote": "Pedir Cotação",
+    "contactUs": "Contacte-nos"
+  },
+
+  "ServiceItems": {
+    "fertilizer": {
+      "title": "Comércio de Fertilizantes",
+      "description": "Identificação e comércio de fertilizantes, conectando fornecedores a mercados agrícolas e clientes em toda a África."
+    },
+    "importExport": {
+      "title": "Importação e Exportação",
+      "description": "Apoio a operações de comércio internacional através da identificação de fornecedores, da coordenação e da movimentação de produtos entre fronteiras e mercados."
+    },
+    "commodity": {
+      "title": "Comércio de Commodities",
+      "description": "Conectamos produtores, fornecedores e compradores através de soluções práticas de comércio de commodities em mercados regionais e internacionais."
+    },
+    "supplyChain": {
+      "title": "Soluções Integradas de Cadeia de Abastecimento",
+      "description": "Coordenação das operações da cadeia de abastecimento para apoiar a movimentação eficiente de produtos da origem ao destino."
+    }
+  },
+
+  "Home": {
+    "whoWeAre": {
+      "eyebrow": "Quem Somos",
+      "title": "Conectar a Oferta e a Procura em África",
+      "description": "A FertiTrade Africa é uma empresa sediada em Moçambique, especializada em comércio e soluções de cadeia de abastecimento, que conecta fornecedores, clientes e mercados em África e para além do continente.",
+      "body": "O nosso negócio assenta no comércio de fertilizantes, nos serviços de importação e exportação, no comércio de commodities e em soluções integradas de cadeia de abastecimento, apoiando a movimentação eficiente dos produtos da origem ao mercado.",
+      "cta": "Saiba Mais Sobre Nós",
+      "imageAlt": "Navio, porto e comércio agrícola em África"
+    },
+    "why": {
+      "eyebrow": "Porquê a FertiTrade Africa",
+      "title": "Criada para Conectar, Comercializar e Entregar",
+      "pillars": {
+        "location": {
+          "subtitle": "Beira, Moçambique",
+          "title": "Localização Estratégica",
+          "description": "A nossa localização estratégica dá acesso aos principais corredores comerciais da África Austral."
+        },
+        "connectivity": {
+          "subtitle": "Conectar Fornecedores e Compradores",
+          "title": "Conectividade de Mercado",
+          "description": "Facilitamos a ligação entre fornecedores, compradores e mercados."
+        },
+        "expertise": {
+          "subtitle": "Da Origem ao Mercado",
+          "title": "Experiência em Cadeia de Abastecimento",
+          "description": "Apoiamos a movimentação eficiente dos produtos da origem ao destino."
+        },
+        "growth": {
+          "subtitle": "Construir Oportunidades Regionais",
+          "title": "Crescimento Africano",
+          "description": "Criamos soluções comerciais orientadas para o crescimento dos mercados africanos."
+        }
+      }
+    },
+    "services": {
+      "eyebrow": "O Que Fazemos",
+      "title": "Os Nossos Serviços",
+      "description": "Soluções práticas de comércio e cadeia de abastecimento, concebidas para movimentar produtos de forma eficiente da origem ao mercado."
+    },
+    "location": {
+      "eyebrow": "Localização Estratégica",
+      "title": "Estrategicamente Localizados na Beira",
+      "description": "Com sede na Beira, Moçambique, a FertiTrade Africa está estrategicamente posicionada num dos principais corredores comerciais da África Austral, o que nos permite servir mercados locais, regionais e internacionais."
+    }
+  },
+
+  "About": {
+    "hero": {
+      "eyebrow": "Sobre Nós",
+      "title": "Sobre a FertiTrade Africa",
+      "intro": "A FertiTrade Africa é uma empresa sediada em Moçambique, especializada em comércio e soluções de cadeia de abastecimento, que conecta fornecedores, clientes e mercados em África e para além do continente."
+    },
+    "body": "O nosso negócio assenta no comércio de fertilizantes, nos serviços de importação e exportação, no comércio de commodities e em soluções integradas de cadeia de abastecimento, apoiando a movimentação eficiente dos produtos da origem ao mercado.",
+    "mission": {
+      "title": "A Nossa Missão",
+      "text": "Conectar a oferta e a procura através de relações comerciais fiáveis e de soluções práticas de cadeia de abastecimento."
+    },
+    "vision": {
+      "title": "A Nossa Visão",
+      "text": "Ser um parceiro africano de confiança em comércio e cadeia de abastecimento, conectando mercados, viabilizando o comércio e contribuindo para o crescimento regional."
+    },
+    "approach": {
+      "title": "A Nossa Abordagem",
+      "text": "Parcerias sólidas. Excelência operacional. Soluções comerciais práticas."
+    },
+    "values": {
+      "eyebrow": "Os Nossos Valores",
+      "title": "O Que Orienta o Nosso Trabalho",
+      "items": {
+        "reliability": {
+          "title": "Fiabilidade",
+          "description": "Construímos relações assentes na confiança, na consistência e na responsabilidade."
+        },
+        "partnership": {
+          "title": "Parceria",
+          "description": "Acreditamos que o comércio de longo prazo se constrói com relações sólidas."
+        },
+        "excellence": {
+          "title": "Excelência Operacional",
+          "description": "Focamo-nos numa execução eficiente e em soluções práticas."
+        },
+        "growth": {
+          "title": "Crescimento",
+          "description": "Procuramos criar oportunidades sustentáveis nos mercados africanos."
+        }
+      }
+    },
+    "process": {
+      "eyebrow": "Como Trabalhamos",
+      "title": "O Nosso Processo Comercial",
+      "steps": {
+        "understand": {
+          "title": "Compreender",
+          "description": "Compreender as necessidades do cliente e as exigências do mercado."
+        },
+        "source": {
+          "title": "Identificar",
+          "description": "Identificar e conectar fornecedores e produtos adequados."
+        },
+        "coordinate": {
+          "title": "Coordenar",
+          "description": "Coordenar os requisitos comerciais, documentais e da cadeia de abastecimento."
+        },
+        "move": {
+          "title": "Movimentar",
+          "description": "Apoiar a movimentação eficiente da origem ao destino."
+        },
+        "deliver": {
+          "title": "Entregar",
+          "description": "Levar os produtos ao mercado pretendido."
+        }
+      }
+    }
+  },
+
+  "Services": {
+    "hero": {
+      "eyebrow": "O Que Fazemos",
+      "title": "Os Nossos Serviços",
+      "intro": "Soluções práticas de comércio e cadeia de abastecimento, concebidas para movimentar produtos de forma eficiente da origem ao mercado."
+    },
+    "importExport": {
+      "eyebrow": "Serviço 02",
+      "title": "Serviços de Importação e Exportação",
+      "description": "A FertiTrade Africa apoia operações de comércio internacional, conectando fornecedores, compradores e mercados através de uma abordagem integrada.",
+      "steps": {
+        "sourcing": {
+          "title": "Identificação de Fornecedores",
+          "description": "Identificação de fornecedores e produtos adequados à necessidade."
+        },
+        "commercial": {
+          "title": "Coordenação Comercial",
+          "description": "Alinhamento das condições entre fornecedores e compradores."
+        },
+        "documentation": {
+          "title": "Documentação",
+          "description": "Preparação e coordenação da documentação comercial."
+        },
+        "logistics": {
+          "title": "Coordenação Logística",
+          "description": "Organização do transporte e do manuseamento ao longo da cadeia de abastecimento."
+        },
+        "shipment": {
+          "title": "Embarque",
+          "description": "Coordenação da movimentação das mercadorias até ao porto e seguimento."
+        },
+        "delivery": {
+          "title": "Entrega",
+          "description": "Entrega da carga no destino previsto."
+        }
+      }
+    }
+  },
+
+  "Fertilizer": {
+    "hero": {
+      "eyebrow": "Serviço 01",
+      "title": "Comércio de Fertilizantes",
+      "subtitle": "Apoiar o Crescimento Agrícola com um Fornecimento Fiável de Fertilizantes"
+    },
+    "body": "A FertiTrade Africa identifica e comercializa fertilizantes, conectando fornecedores a mercados agrícolas e clientes em toda a África. O nosso papel é assegurar relações de fornecimento fiáveis a agricultores, distribuidores e empresas agrícolas que dependem de um acesso constante a fertilizantes.",
+    "cta": "Pedir Cotação de Fertilizantes",
+    "info": {
+      "eyebrow": "Em Breve",
+      "title": "Informação sobre Produtos",
+      "description": "As secções abaixo estão reservadas para informação detalhada sobre os produtos, assim que estiver disponível. Contacte-nos para saber mais sobre o fornecimento de fertilizantes.",
+      "placeholder": "A adicionar à medida que a informação dos fornecedores for confirmada.",
+      "areas": {
+        "categories": "Categorias de Produtos",
+        "specifications": "Especificações dos Fertilizantes",
+        "origin": "Origem",
+        "packaging": "Embalagem",
+        "volumes": "Volumes Disponíveis",
+        "documentation": "Documentação Técnica"
+      }
+    },
+    "ctaSection": {
+      "title": "Tem uma Necessidade de Fertilizantes?",
+      "description": "Diga-nos o que precisa e a nossa equipa entrará em contacto sobre fornecimento e disponibilidade."
+    }
+  },
+
+  "Commodity": {
+    "hero": {
+      "eyebrow": "Serviço 03",
+      "title": "Comércio de Commodities",
+      "subtitle": "Conectar a Oferta de Commodities à Procura do Mercado"
+    },
+    "body": "A FertiTrade Africa desempenha o papel de intermediária e parceira comercial, conectando produtores, fornecedores e compradores através de soluções práticas de comércio de commodities em mercados regionais e internacionais.",
+    "cta": "Discutir uma Oportunidade de Negócio",
+    "info": {
+      "eyebrow": "Em Breve",
+      "title": "Categorias de Commodities Comercializadas",
+      "description": "As categorias abaixo estão reservadas para as commodities confirmadas, à medida que as relações comerciais se desenvolvem. Contacte-nos para discutir uma oportunidade concreta.",
+      "placeholder": "A adicionar à medida que as relações comerciais forem confirmadas.",
+      "areas": {
+        "agricultural": "Commodities Agrícolas",
+        "industrial": "Commodities Industriais",
+        "bulk": "Produtos a Granel",
+        "other": "Outros Produtos Comercializados"
+      }
+    },
+    "ctaSection": {
+      "title": "Tem uma Commodity para Comercializar?",
+      "description": "Quer fornecer ou adquirir uma commodity? Vamos discutir a oportunidade."
+    }
+  },
+
+  "SupplyChain": {
+    "hero": {
+      "eyebrow": "Serviço 04",
+      "title": "Soluções Integradas de Cadeia de Abastecimento",
+      "intro": "Coordenamos a identificação de fornecedores, as aquisições, o comércio e a logística para apoiar a movimentação eficiente de produtos da origem ao mercado, procurando aumentar a eficiência, a visibilidade e a fiabilidade em cada etapa."
+    },
+    "ecosystem": {
+      "eyebrow": "O Nosso Ecossistema",
+      "title": "Da Origem ao Mercado, em Coordenação"
+    },
+    "cards": {
+      "sourcing": {
+        "title": "Identificação de Fornecedores",
+        "description": "Identificação de fornecedores e produtos adequados à necessidade."
+      },
+      "procurement": {
+        "title": "Aquisições",
+        "description": "Coordenação das condições comerciais e das necessidades de compra."
+      },
+      "tradeCoordination": {
+        "title": "Coordenação Comercial",
+        "description": "Alinhamento entre fornecedores, compradores e condições comerciais."
+      },
+      "logisticsCoordination": {
+        "title": "Coordenação Logística",
+        "description": "Organização do transporte ao longo da cadeia de abastecimento."
+      },
+      "documentation": {
+        "title": "Documentação",
+        "description": "Preparação e coordenação da documentação comercial."
+      },
+      "marketDelivery": {
+        "title": "Entrega ao Mercado",
+        "description": "Levar os produtos ao mercado pretendido."
+      }
+    }
+  },
+
+  "Markets": {
+    "hero": {
+      "eyebrow": "Mercados que Servimos",
+      "title": "Conectar Oportunidades em África e Além",
+      "intro": "A nossa plataforma está posicionada para conectar fornecedores e clientes em mercados regionais e internacionais."
+    },
+    "location": {
+      "eyebrow": "Localização Estratégica",
+      "title": "Estrategicamente Localizados na Beira",
+      "description": "Com sede na Beira, Moçambique, a FertiTrade Africa está estrategicamente posicionada num dos principais corredores comerciais da África Austral, o que nos permite servir mercados locais, regionais e internacionais.",
+      "imageAlt": "Porto da Beira, Moçambique"
+    },
+    "regions": {
+      "eyebrow": "Conectividade Regional",
+      "title": "Mercados e Corredores que Estamos Posicionados para Servir",
+      "description": "Estas regiões representam mercados e corredores comerciais relevantes para a nossa plataforma, e não a confirmação de operações já existentes em cada mercado.",
+      "items": {
+        "southern": {
+          "title": "África Austral",
+          "description": "A Beira situa-se num dos principais corredores comerciais da região, o que posiciona a nossa plataforma para servir mercados como Moçambique, Zimbabwe, Zâmbia e Malawi."
+        },
+        "regional": {
+          "title": "Mercados Regionais",
+          "description": "Trabalhamos para conectar fornecedores e compradores de mercados vizinhos que têm a Beira como porta de entrada."
+        },
+        "international": {
+          "title": "Mercados Internacionais",
+          "description": "A nossa plataforma está posicionada para conectar fornecedores e clientes em mercados regionais e internacionais."
+        }
+      }
+    },
+    "cta": {
+      "title": "Está a Explorar uma Oportunidade de Mercado?",
+      "description": "Fale-nos do mercado que pretende alcançar ou abastecer, e vamos discutir como podemos ajudar."
+    },
+    "map": {
+      "ariaLabel": "Diagrama de conectividade regional a partir da Beira, Moçambique",
+      "mozambique": "Moçambique",
+      "caption": "Conectividade Regional",
+      "regions": {
+        "zimbabwe": "Zimbabwe",
+        "zambia": "Zâmbia",
+        "malawi": "Malawi",
+        "drc": "RDC",
+        "southernAfrica": "África Austral"
+      }
+    }
+  },
+
+  "Contact": {
+    "hero": {
+      "eyebrow": "Contacto",
+      "title": "Vamos Falar de Negócios",
+      "intro": "Seja fornecedor, comprador, distribuidor ou parceiro estratégico, gostaríamos de falar consigo."
+    },
+    "location": "Beira, Moçambique",
+    "whatsapp": "WhatsApp",
+    "linkedin": "LinkedIn"
+  },
+
+  "Quote": {
+    "hero": {
+      "eyebrow": "Pedir Cotação",
+      "title": "Pedir Cotação",
+      "intro": "Descreva-nos a sua necessidade e a nossa equipa comercial entrará em contacto com os próximos passos."
+    }
+  },
+
+  "ContactForm": {
+    "labels": {
+      "name": "Nome",
+      "company": "Empresa",
+      "email": "Email",
+      "phone": "Telefone",
+      "subject": "Assunto",
+      "message": "Mensagem"
+    },
+    "errors": {
+      "name": "Por favor, indique o seu nome.",
+      "email": "Por favor, indique o seu email.",
+      "emailInvalid": "Por favor, indique um endereço de email válido.",
+      "subject": "Por favor, indique o assunto.",
+      "message": "Por favor, escreva a sua mensagem.",
+      "generic": "Ocorreu um erro. Por favor, tente novamente."
+    },
+    "submit": "Enviar Mensagem",
+    "sending": "A enviar...",
+    "success": {
+      "title": "Obrigado. A sua mensagem foi recebida.",
+      "text": "A nossa equipa entrará em contacto brevemente."
+    }
+  },
+
+  "QuoteForm": {
+    "labels": {
+      "fullName": "Nome Completo",
+      "companyName": "Nome da Empresa",
+      "email": "Email",
+      "phone": "Telefone",
+      "country": "País",
+      "product": "Produto / Commodity",
+      "quantity": "Quantidade",
+      "origin": "Origem",
+      "destination": "Destino",
+      "incoterm": "Incoterm Preferido",
+      "deliveryDate": "Data de Entrega Pretendida",
+      "additionalInfo": "Informação Adicional"
+    },
+    "selectOption": "Escolha uma opção",
+    "incotermOther": "Outro / Não tenho a certeza",
+    "consent": "Concordo em ser contactado(a) relativamente ao meu pedido.",
+    "errors": {
+      "fullName": "Por favor, indique o seu nome completo.",
+      "companyName": "Por favor, indique o nome da empresa.",
+      "email": "Por favor, indique o seu email.",
+      "emailInvalid": "Por favor, indique um endereço de email válido.",
+      "country": "Por favor, indique o seu país.",
+      "product": "Por favor, indique o produto ou a commodity.",
+      "quantity": "Por favor, indique uma quantidade estimada.",
+      "consent": "Por favor, confirme que concorda em ser contactado(a).",
+      "generic": "Ocorreu um erro. Por favor, tente novamente."
+    },
+    "submit": "Submeter Pedido",
+    "submitting": "A submeter...",
+    "success": {
+      "title": "Obrigado. O seu pedido foi recebido.",
+      "text": "Um membro da nossa equipa comercial analisará o seu pedido e entrará em contacto brevemente."
+    }
+  },
+
+  "Legal": {
+    "eyebrow": "Legal",
+    "privacy": {
+      "title": "Política de Privacidade",
+      "body": "Esta página é provisória. A política de privacidade completa da FertiTrade Africa, que descreve como os dados submetidos nos formulários de contacto e de pedido de cotação deste site são recolhidos, utilizados e armazenados, será publicada aqui assim que estiver finalizada. Para questões sobre os seus dados entretanto, contacte-nos através de <email>info@fertitrade.co.mz</email>."
+    },
+    "terms": {
+      "title": "Termos e Condições",
+      "body": "Esta página é provisória. Os termos e condições de utilização deste site da FertiTrade Africa serão publicados aqui assim que estiverem finalizados. Para questões entretanto, contacte-nos através de <email>info@fertitrade.co.mz</email>."
+    }
+  },
+
+  "NotFound": {
+    "eyebrow": "404",
+    "title": "Página Não Encontrada",
+    "text": "A página que procura não existe ou pode ter sido movida.",
+    "back": "Voltar ao Início"
+  }
+}

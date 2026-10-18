@@ -1,3 +1,6 @@
+import { routing } from '@/i18n/routing'
+import { localizedUrl } from '@/lib/site'
+
 const routes = [
   '',
   '/about',
@@ -10,10 +13,17 @@ const routes = [
   '/request-a-quote',
 ]
 
+// One entry per page and language, each pointing to its translated twin.
 export default function sitemap() {
-  const base = 'https://www.fertitradeafrica.com'
-  return routes.map((route) => ({
-    url: `${base}${route}`,
-    lastModified: new Date(),
-  }))
+  return routes.flatMap((route) =>
+    routing.locales.map((locale) => ({
+      url: localizedUrl(locale, route),
+      lastModified: new Date(),
+      alternates: {
+        languages: Object.fromEntries(
+          routing.locales.map((l) => [l, localizedUrl(l, route)])
+        ),
+      },
+    }))
+  )
 }

@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import { useLocale, useTranslations } from 'next-intl'
 import { CheckCircle2 } from 'lucide-react'
 
 const initialState = {
@@ -14,6 +15,8 @@ const initialState = {
 }
 
 export default function ContactForm() {
+  const t = useTranslations('ContactForm')
+  const locale = useLocale()
   const [values, setValues] = useState(initialState)
   const [errors, setErrors] = useState({})
   const [submitted, setSubmitted] = useState(false)
@@ -27,18 +30,18 @@ export default function ContactForm() {
 
   const validate = () => {
     const next = {}
-    if (!values.name.trim()) next.name = 'Please enter your name.'
+    if (!values.name.trim()) next.name = t('errors.name')
     if (!values.email.trim()) {
-      next.email = 'Please enter your email.'
+      next.email = t('errors.email')
     } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(values.email)) {
-      next.email = 'Please enter a valid email address.'
+      next.email = t('errors.emailInvalid')
     }
-    if (!values.subject.trim()) next.subject = 'Please enter a subject.'
-    if (!values.message.trim()) next.message = 'Please enter your message.'
+    if (!values.subject.trim()) next.subject = t('errors.subject')
+    if (!values.message.trim()) next.message = t('errors.message')
     return next
   }
 
-   const handleSubmit = async (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
     const validationErrors = validate()
     setErrors(validationErrors)
@@ -50,16 +53,16 @@ export default function ContactForm() {
       const res = await fetch('/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(values),
+        body: JSON.stringify({ ...values, locale }),
       })
       const data = await res.json()
       if (!res.ok || !data.ok) {
-        throw new Error(data.error || 'Something went wrong. Please try again.')
+        throw new Error('request failed')
       }
       setSubmitted(true)
       setValues(initialState)
     } catch (err) {
-      setSubmitError(err.message)
+      setSubmitError(t('errors.generic'))
     } finally {
       setSubmitting(false)
     }
@@ -69,8 +72,8 @@ export default function ContactForm() {
     return (
       <div className="flex flex-col items-center gap-3 rounded-sm border border-green/30 bg-green/5 p-10 text-center">
         <CheckCircle2 className="text-green" size={32} />
-        <p className="text-lg font-bold text-navy">Thank you. Your enquiry has been received.</p>
-        <p className="text-sm text-ink/60">Our team will get back to you shortly.</p>
+        <p className="text-lg font-bold text-navy">{t('success.title')}</p>
+        <p className="text-sm text-ink/60">{t('success.text')}</p>
       </div>
     )
   }
@@ -78,17 +81,17 @@ export default function ContactForm() {
   return (
     <form onSubmit={handleSubmit} noValidate className="space-y-5">
       <div className="grid gap-5 md:grid-cols-2">
-        <Field label="Name" name="name" value={values.name} onChange={handleChange} error={errors.name} required />
-        <Field label="Company" name="company" value={values.company} onChange={handleChange} />
+        <Field label={t('labels.name')} name="name" value={values.name} onChange={handleChange} error={errors.name} required />
+        <Field label={t('labels.company')} name="company" value={values.company} onChange={handleChange} />
       </div>
       <div className="grid gap-5 md:grid-cols-2">
-        <Field label="Email" name="email" type="email" value={values.email} onChange={handleChange} error={errors.email} required />
-        <Field label="Phone" name="phone" type="tel" value={values.phone} onChange={handleChange} />
+        <Field label={t('labels.email')} name="email" type="email" value={values.email} onChange={handleChange} error={errors.email} required />
+        <Field label={t('labels.phone')} name="phone" type="tel" value={values.phone} onChange={handleChange} />
       </div>
-      <Field label="Subject" name="subject" value={values.subject} onChange={handleChange} error={errors.subject} required />
+      <Field label={t('labels.subject')} name="subject" value={values.subject} onChange={handleChange} error={errors.subject} required />
       <div>
         <label htmlFor="message" className="mb-1.5 block text-sm font-semibold text-navy">
-          Message <span className="text-green">*</span>
+          {t('labels.message')} <span className="text-green">*</span>
         </label>
         <textarea
           id="message"
@@ -102,8 +105,8 @@ export default function ContactForm() {
         />
         {errors.message && <p className="mt-1 text-xs text-red-500">{errors.message}</p>}
       </div>
-            <button type="submit" disabled={submitting} className="btn-primary w-full disabled:opacity-60 sm:w-auto">
-        {submitting ? 'Sending...' : 'Send Message'}
+      <button type="submit" disabled={submitting} className="btn-primary w-full disabled:opacity-60 sm:w-auto">
+        {submitting ? t('sending') : t('submit')}
       </button>
       {submitError && <p className="text-sm text-red-500">{submitError}</p>}
 

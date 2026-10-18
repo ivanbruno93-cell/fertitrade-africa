@@ -1,9 +1,12 @@
-import Link from 'next/link'
+import { useTranslations } from 'next-intl'
 import { MapPin } from 'lucide-react'
+import { Link } from '@/i18n/navigation'
 import HeroCarousel from './HeroCarousel'
 import FlowChain from './FlowChain'
 
 export default function Hero() {
+  const t = useTranslations('Hero')
+
   return (
     <section className="relative overflow-hidden bg-navy">
       <div className="relative min-h-[560px] w-full md:min-h-[640px] lg:min-h-[720px]">
@@ -26,21 +29,20 @@ export default function Hero() {
           <div className="reveal max-w-xl">
             <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-white/25 bg-navy/30 px-4 py-1.5 text-xs font-semibold uppercase tracking-wide text-white backdrop-blur-sm">
               <MapPin size={14} className="text-green-light" />
-              Based in Beira, Mozambique
+              {t('badge')}
             </div>
             <h1 className="text-4xl font-extrabold leading-[1.1] text-white drop-shadow-sm md:text-5xl lg:text-6xl">
-              Connecting Markets. <span className="text-green-light">Growing Africa.</span>
+              {t('titleLine1')} <span className="text-green-light">{t('titleLine2')}</span>
             </h1>
             <p className="mt-6 max-w-lg text-base leading-relaxed text-white/85 md:text-lg">
-              Trade, supply chain and market solutions connecting suppliers, customers
-              and opportunities across Africa and beyond.
+              {t('subtitle')}
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
               <Link href="/services" className="btn-primary">
-                Explore Our Services
+                {t('exploreServices')}
               </Link>
               <Link href="/request-a-quote" className="btn-outline-light">
-                Request a Quote
+                {t('requestQuote')}
               </Link>
             </div>
           </div>
@@ -49,7 +51,7 @@ export default function Hero() {
 
       <div className="relative z-10 border-t-2 border-green/30 bg-navy">
         <div className="container-page py-12 md:py-14">
-          <FlowChain steps={['Supply', 'Trade', 'Logistics', 'Market']} tone="dark" />
+          <FlowChain steps={['supply', 'trade', 'logistics', 'market']} tone="dark" />
         </div>
       </div>
     </section>

@@ -1,17 +1,19 @@
+import { useTranslations } from 'next-intl'
 import { Wheat, Handshake, Truck, TrendingUp, Search, ClipboardList, Ship } from 'lucide-react'
 
 const STEP_ICONS = {
-  Supply: Wheat,
-  Trade: Handshake,
-  Logistics: Truck,
-  Market: TrendingUp,
-  Source: Search,
-  Procurement: ClipboardList,
-  Transport: Truck,
-  Port: Ship,
+  supply: Wheat,
+  trade: Handshake,
+  logistics: Truck,
+  market: TrendingUp,
+  source: Search,
+  procurement: ClipboardList,
+  transport: Truck,
+  port: Ship,
 }
 
 export default function FlowChain({ steps, tone = 'light' }) {
+  const t = useTranslations('Flow')
   const isDark = tone === 'dark'
 
   return (
@@ -48,7 +50,7 @@ export default function FlowChain({ steps, tone = 'light' }) {
                 isDark ? 'text-white' : 'text-navy'
               }`}
             >
-              {step}
+              {t(step)}
             </span>
           </div>
         )

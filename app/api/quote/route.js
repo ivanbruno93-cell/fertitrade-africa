@@ -20,6 +20,7 @@ export async function POST(request) {
       additionalInfo,
       consent,
       honeypot,
+      locale,
     } = body
 
     if (honeypot) {
@@ -53,6 +54,7 @@ export async function POST(request) {
         `Destination: ${destination || '-'}`,
         `Preferred Incoterm: ${incoterm || '-'}`,
         `Required Delivery Date: ${deliveryDate || '-'}`,
+        `Site language: ${locale === 'pt' ? 'Portuguese (PT)' : 'English (EN)'}`,
         '',
         'Additional Information:',
         additionalInfo || '-',
